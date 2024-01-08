@@ -1,6 +1,9 @@
+import { lazy } from 'react';
+
 import { Route, Routes } from 'react-router-dom';
 import SharedLayout from './layouts/SharedLayout/SharedLayout';
-import HomePage from './pages/HomePage/HomePage';
+
+const HomePage = lazy(()=>import("./pages/HomePage/HomePage"))
 
 function App() {
   return (
