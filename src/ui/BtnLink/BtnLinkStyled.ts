@@ -1,7 +1,6 @@
 import styled from "@emotion/styled";
-import { NavLink } from "react-router-dom";
 
-export const LinkStyled = styled(NavLink)`
+export const LinkStyled = styled.a`
 padding-top: 14px;
 padding-bottom: 14px;
 padding-left: ${props => props.content === "Learn More" ? "44px" : "39px"};
