@@ -6,6 +6,10 @@ import homeNavImg1 from "../assets/images/telemetry.jpg";
 import homeNavImg2 from "../assets/images/near-you.jpg";
 import homeNavImg3 from "../assets/images/payments.jpg";
 
+import ourTech from "../assets/images/our-tech.jpg";
+import ourIntegrity from "../assets/images/our-integrity.jpg";
+import ourCommunity from "../assets/images/our-community.jpg";
+
 export const manualItems = [
   {
     id: 1,
@@ -52,19 +56,40 @@ export const homeNav = [
 ];
 
 export const navBar = [
-    {
-        id:1,
-        name:"About",
-        path:"about"
-    },
-    {
-        id:2,
-        name:"Location",
-        path:"location"
-    },
-    {
-        id:3,
-        name:"Careers",
-        path:"careers"
-    }
-]
+  {
+    id: 1,
+    name: "About",
+    path: "about",
+  },
+  {
+    id: 2,
+    name: "Location",
+    path: "location",
+  },
+  {
+    id: 3,
+    name: "Careers",
+    path: "careers",
+  },
+];
+
+export const values = [
+  {
+    id: 1,
+    img: ourTech,
+    name: "Our tech",
+    body: "We’re using cutting edge technology to drive accessible urban transportation forward. Our fully electric scooters are a joy to ride!",
+  },
+  {
+    id:2,
+    img:ourIntegrity,
+    name:"Our integrity",
+    body:"We’re using cutting edge technology to drive accessible urban transportation forward. Our fully electric scooters are a joy to ride!"
+  },
+  {
+    id:3,
+    img:ourCommunity,
+    name:"Our community",
+    body:"We support every community we serve. All workers are paid a living wage based on their location and are Scoot employees."
+  }
+];
