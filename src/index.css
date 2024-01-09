@@ -41,6 +41,9 @@ a {
 display: inline-block;
 
   text-decoration: none;
+
+  font-family: "Space";
+
 }
 
 input{

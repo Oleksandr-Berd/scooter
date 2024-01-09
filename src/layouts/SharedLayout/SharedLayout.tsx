@@ -1,6 +1,7 @@
 import { ReactNode, Suspense } from "react";
 import { DNA } from "react-loader-spinner";
 import Header from "../Header/Header";
+import Footer from "../Footer/Footer";
 
 type Props = {
   children: ReactNode;
@@ -9,7 +10,7 @@ type Props = {
 const SharedLayout: React.FC<Props> = ({ children }) => {
   return (
     <main>
-        <Header/>
+      <Header />
       <Suspense
         fallback={
           <DNA
@@ -24,6 +25,7 @@ const SharedLayout: React.FC<Props> = ({ children }) => {
       >
         {children}
       </Suspense>
+      <Footer />
     </main>
   );
 };

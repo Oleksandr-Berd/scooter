@@ -10,7 +10,7 @@ const Header: React.FC = () => {
       <SC.MenuBtn>
         <BurgerSvg />
       </SC.MenuBtn>
-      <Logo />
+      <Logo location="header"/>
     </SC.HeaderStyled>
   );
 };

@@ -1,6 +1,11 @@
 import styled from "@emotion/styled";
+import { IStyles } from "../../utils/interfaces";
 
-export const DownloadSection = styled.section`
+export const DownloadSection = styled.section<IStyles>`
+position: relative;
+
+overflow: hidden;
+
 padding-top: 88px;
 padding-bottom: 88px;
 padding-left: 32px;
@@ -9,6 +14,17 @@ padding-right: 32px;
 text-align: center;
 
 background-color: #495567;
+
+&::before{
+content: url(${props => props.bg});
+
+    position: absolute;
+
+    bottom: 0;
+    left: 0;
+
+    transform: translateX(-52%);
+}
 `
 
 export const DownloadTitle = styled.h2`

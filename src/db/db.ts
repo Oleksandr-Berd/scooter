@@ -50,3 +50,21 @@ export const homeNav = [
     img: homeNavImg3,
   },
 ];
+
+export const navBar = [
+    {
+        id:1,
+        name:"About",
+        path:"about"
+    },
+    {
+        id:2,
+        name:"Location",
+        path:"location"
+    },
+    {
+        id:3,
+        name:"Careers",
+        path:"careers"
+    }
+]
