@@ -1,5 +1,5 @@
 export interface IStyles {
-    bg:string;
+    bg:string | (()=>string | false);
     secBg:string;
 }
 
