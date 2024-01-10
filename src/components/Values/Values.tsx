@@ -9,7 +9,7 @@ const Values: React.FC = () => {
 
   const { pathname } = location;
 
-  const title = pathname === "/about" && "Our values";
+  const title = pathname === "/about" ? "Our values" : "Why join us?";
 
   return (
     <SC.ValuesSection>

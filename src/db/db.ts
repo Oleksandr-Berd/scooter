@@ -132,3 +132,36 @@ export const questions = [
     answer:"You will repay all the sum of damage!"
   }
 ]
+
+export const vacancies = [
+  {
+    id:1,
+    vacancy:"General Manager",
+    address:"Jakarta, Indonesia"
+  },
+  {
+    id:2,
+    vacancy:"UI/UX Designer",
+    address:"Yokohama, Japan"
+  },
+  {
+    id:3,
+    vacancy:"Blog Content Copywriter",
+    address:"New York, United States"
+  },
+  {
+    id:4,
+    vacancy:"Graphic Designer",
+    address:"New York, United States"
+  },
+  {
+    id:5,
+    vacancy:"Fleet Supervisor",
+    address:"Jakarta, Indonesia"
+  },
+  {
+    id:6,
+    vacancy:"UX Analyst",
+    address:"London, United Kingdom"
+  }
+]

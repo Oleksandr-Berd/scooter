@@ -3,6 +3,7 @@ import { useMediaQuery } from "usehooks-ts";
 import * as SC from "./HeroPageStyles";
 
 import aboutMob from "../../assets/images/about-hero-mobile.jpg";
+import carLocMob from '../../assets/images/careers-location-hero-mobile.jpg'
 
 type Props = {
   content: string;
@@ -13,7 +14,7 @@ const HeroPage: React.FC<Props> = ({ content }) => {
 
   const handleBg = () => {
     if (!isTablet) {
-      return content === "About" && aboutMob;
+      return content === "About" ? aboutMob : carLocMob;
     } else{
         return "___"
     }
