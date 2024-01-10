@@ -8,7 +8,6 @@ const HomePage:React.FC = () => {
         <Hero/>
         <Manual/>
         <HomeNavSection/>
-        <Download/>
     </div> );
 }
  

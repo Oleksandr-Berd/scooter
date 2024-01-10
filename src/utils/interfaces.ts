@@ -1,6 +1,7 @@
 export interface IStyles {
     bg:string | (()=>string | false);
     secBg:string;
+    isActive?:boolean;
 }
 
 export interface ILink {

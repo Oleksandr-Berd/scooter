@@ -2,6 +2,7 @@ import { ReactNode, Suspense } from "react";
 import { DNA } from "react-loader-spinner";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
+import Download from "../../components/Download/Download";
 
 type Props = {
   children: ReactNode;
@@ -25,6 +26,7 @@ const SharedLayout: React.FC<Props> = ({ children }) => {
       >
         {children}
       </Suspense>
+      <Download/>
       <Footer />
     </main>
   );

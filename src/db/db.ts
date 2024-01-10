@@ -93,3 +93,42 @@ export const values = [
     body:"We support every community we serve. All workers are paid a living wage based on their location and are Scoot employees."
   }
 ];
+
+export const questions = [
+  {
+    id:1,
+    category:"How it works",
+    question:"How do I download the app?",
+    answer:"To download the Scoot app, you can search “Scoot” in both the App and Google Play stores. An even simpler way to do it would be to click the relevant link at the bottom of this page and you’ll be re-directed to the correct page."
+  },
+  {
+    id:2,
+    question:"Can I find a nearby Scoots?",
+    category:"How it works",
+    answer:"Yes, You can. Use location section"
+  },
+  {
+    id:3,
+    question:"Do I need a license to ride?",
+    category:"How it works",
+    answer:"No, You don't need a license to ride a scooter."
+  },
+  {
+    id:4,
+    question:"Should I wear a helmet?",
+    category:"Safe driving",
+    answer:"Yes, please do! All cities have different laws. But we strongly strongly strongly recommend always wearing a helmet regardless of the local laws. We like you and we want you to be as safe as possible while Scooting."
+  },
+  {
+    id:5,
+    question:"How about the rules & regulations?",
+    category:"Safe driving",
+    answer:"Please, explore Your local rules and regulations"
+  },
+  {
+    id: 6,
+    question:"What if I damage my Scoot?",
+    category:"Safe driving",
+    answer:"You will repay all the sum of damage!"
+  }
+]
