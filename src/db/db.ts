@@ -165,3 +165,22 @@ export const vacancies = [
     address:"London, United Kingdom"
   }
 ]
+
+export const locations = [
+  {
+    id:1,
+    city:"New York"
+  },
+  {
+    id:2,
+    city:"London"
+  },
+  {
+    id:3,
+    city:"Jakarta"
+  },
+  {
+    id:4,
+    city:"Yokohama"
+  }
+]

@@ -6,6 +6,7 @@ import SharedLayout from './layouts/SharedLayout/SharedLayout';
 const HomePage = lazy(()=>import("./pages/HomePage/HomePage"))
 const AboutPage = lazy(()=> import("./pages/AboutPage/AboutPage"))
 const CareersPage = lazy(() => import("./pages/CareersPage/CareersPage"))
+const LocationPage = lazy(()=> import("./pages/LocationPage/LocationPage"))
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route path='/' element={<HomePage/>}/>
           <Route path='/about' element={<AboutPage/>}/>
           <Route path='/careers' element={<CareersPage/>}/>
+          <Route path='/location' element={<LocationPage/>}/>
         </Routes>
       </SharedLayout>
     </>
