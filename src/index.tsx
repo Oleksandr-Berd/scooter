@@ -8,6 +8,8 @@ import { BrowserRouter } from "react-router-dom";
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
+export const portalContainer = document.getElementById('modal-menu');
+
 root.render(
   <React.StrictMode>
     <BrowserRouter>
