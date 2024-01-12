@@ -6,9 +6,9 @@ import { navBar } from "../../db/db";
 import { ILocation, IMenu } from "../../utils/interfaces";
 
 const NavBar:React.FC<ILocation & Partial<IMenu>> = ({location, handleMenu}) => {
-    return ( <nav>
+    return ( <SC.NavList>
         {navBar.map(({id, name, path})=> <SC.NavBarItem key={id} location={location} onClick={handleMenu}><NavLink to={path}>{name}</NavLink></SC.NavBarItem>)}
-    </nav> );
+    </SC.NavList> );
 }
  
 export default NavBar;

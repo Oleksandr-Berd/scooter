@@ -16,4 +16,17 @@ display: inline-block;
 
     fill: ${props => props.location === "header" ? "#495567" : "#fff"}
 }
+
+@media (min-width: 768px){
+    position: static;
+
+    top: auto;
+    left: auto;
+    transform: translateY(0);
+
+    & > svg{
+    width: ${props => props.location === "header" ? "108px" : "108px"} ;
+    height: ${props => props.location === "header" ? "29px" : "29px"};
+}
+}
 `
