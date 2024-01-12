@@ -7,6 +7,13 @@ padding-right: 32px;
 margin-bottom: 145px;
 
 text-align: center;
+
+@media (min-width: 768px){
+    padding-left: 155px;
+    padding-right: 156px;
+
+    margin-bottom: 120px;
+}
 `
 
 export const Title = styled.h2`
@@ -16,6 +23,12 @@ font-size: 32px;
 line-height: 1;
 
 color: #495567;
+
+@media (min-width: 768px){
+    margin-bottom: 105px;
+    font-size: 48px;
+    letter-spacing: -2.14px;
+}
 `
 
 export const Item = styled.li`

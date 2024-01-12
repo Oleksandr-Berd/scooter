@@ -6,11 +6,13 @@ import betterLive from "../../assets/images/better-living.jpg";
 import firstArrow from '../../assets/patterns/left-upward-arrow.svg'
 import secondArrow from '../../assets/patterns/right-arrow.svg'
 
+import circle from '../../assets/patterns/circle.svg'
+
 const AboutInfo:React.FC = () => {
   return (
     <SC.InfoSection>
       <SC.List>
-        <SC.Item bg={firstArrow}>
+        <SC.Item bg={firstArrow} secBg={circle}>
           <img src={digitalImg} alt="digital" />
           <h3>Mobility for the digital era</h3>
           <p>
@@ -19,7 +21,7 @@ const AboutInfo:React.FC = () => {
             your fingertips.
           </p>
         </SC.Item>
-        <SC.Item bg={secondArrow}>
+        <SC.Item bg={secondArrow} secBg={circle}>
           <img src={betterLive} alt="betterment" />
           <h3>Better urban living</h3>
           <p>
