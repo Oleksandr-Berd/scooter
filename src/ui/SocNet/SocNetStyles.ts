@@ -7,6 +7,11 @@ align-items: center;
 justify-content: center;
 
 margin-top: 85px;
+
+@media (min-width: 768px){
+    margin-top: 0;
+    margin-left: calc(152px - 59px);
+}
 `
 
 export const SocNetItem = styled.li`

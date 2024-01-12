@@ -25,6 +25,17 @@ content: url(${props => props.bg});
 
     transform: translateX(-52%);
 }
+
+@media (min-width: 768px){
+    padding-top: 62px;
+    padding-bottom: 62px;
+    padding-left: 155px;
+    padding-right: 156px;
+
+    &::before{
+        transform: translateX(-230px);
+    }
+}
 `
 
 export const DownloadTitle = styled.h2`
@@ -35,6 +46,11 @@ line-height: 1;
 letter-spacing: -1.43px;
 
 color: #fff;
+
+@media (min-width: 768px){
+    font-size: 48px;
+    letter-spacing: -2.14px;
+}
 `
 
 export const BtnCon = styled.div`
