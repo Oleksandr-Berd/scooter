@@ -6,10 +6,10 @@ export const NavBarItem = styled.li<ILocation>`
     font-size: 15px;
     line-height: 1.67;
 
-    color: ${(props) => props.location === "footer" && "#939CAA"};
+    color: ${(props) => props.location === "footer" ? "#939CAA" : "#e5ecf4"};
   }
 
   &:not(:last-child) {
-    margin-bottom: 16px;
+    margin-bottom: ${props => props.location === "footer" ? "16px" : "24px"};
   }
 `;
