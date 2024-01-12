@@ -2,6 +2,7 @@ import * as SC from './HomeNavStyles'
 
 import leftDown from '../../assets/patterns/right-arrow.svg'
 import leftUpward from '../../assets/patterns/left-downward-arrow.svg'
+import circle from '../../assets/patterns/circle.svg'
 
 import ButtonLink from "../../ui/BtnLink/BtnLink";
 
@@ -17,7 +18,7 @@ const HomeNavItem:React.FC<Props> = ({name, body, img, idx, path}) => {
 
 const isEven = (idx + 1) % 2 === 0
 
-    return ( <SC.HomeNavItem bg={isEven ? leftDown : leftUpward}>
+    return ( <SC.HomeNavItem bg={isEven ? leftDown : leftUpward} secBg={circle}>
         <SC.Image src={img} alt={name} />
         <SC.Title>{name}</SC.Title>
         <SC.Body>{body}</SC.Body>
