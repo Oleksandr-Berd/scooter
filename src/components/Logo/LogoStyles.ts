@@ -28,5 +28,9 @@ display: inline-block;
     width: ${props => props.location === "header" ? "108px" : "108px"} ;
     height: ${props => props.location === "header" ? "29px" : "29px"};
 }
+
+@media (min-width: 1440px){
+    margin-right: 58px;
+}
 }
 `

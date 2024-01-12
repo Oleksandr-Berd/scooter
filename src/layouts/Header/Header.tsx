@@ -13,17 +13,28 @@ import ButtonLink from '../../ui/BtnLink/BtnLink';
 const Header: React.FC<IMenu> = ({handleMenu, isMenu}) => {
 
 const isTablet = useMediaQuery("(min-width:768px)")
+const isDesktop = useMediaQuery("(min-width:1440px)")
 
-  return (
-    <SC.HeaderStyled>
-    
-      
-      <Logo location="header"/>
-      {!isTablet ? <SC.MenuBtn onClick={handleMenu}>
-        {isMenu ? <CloseSvg/> : <BurgerSvg/>}
-      </SC.MenuBtn>: <NavBar location='header'/>}
-      {isTablet ? <ButtonLink content='Set Scootin' path='#download'/> : null}
-    </SC.HeaderStyled>
+  return (<>
+  {isDesktop ?
+ <SC.HeaderStyled>
+  <SC.DeskWrapper>
+  <Logo location="header"/>
+  <NavBar location='header'/>
+  </SC.DeskWrapper>
+  <ButtonLink content='Set Scootin' path='#download'/>
+</SC.HeaderStyled>
+:
+<SC.HeaderStyled>
+<Logo location="header"/>
+{!isTablet ? <SC.MenuBtn onClick={handleMenu}>
+  {isMenu ? <CloseSvg/> : <BurgerSvg/>}
+</SC.MenuBtn>: <NavBar location='header'/>}
+{isTablet ? <ButtonLink content='Set Scootin' path='#download'/> : null}
+</SC.HeaderStyled>  
+}
+  </>
+   
   );
 };
 
