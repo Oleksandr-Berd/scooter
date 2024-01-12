@@ -31,6 +31,10 @@ export const LocationsSection = styled.section`
 
 export const MapWrapper = styled.div`
   position: relative;
+
+  @media (min-width: 768px){
+    display: inline-block;
+  }
 `;
 
 export const List = styled.ul`

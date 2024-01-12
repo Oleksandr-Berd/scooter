@@ -8,6 +8,11 @@ export const JoinSection = styled.section`
   margin-bottom: 120px;
 
   text-align: center;
+
+  @media (min-width: 768px) {
+    padding-left: 97px;
+    padding-right: 98px;
+  }
 `;
 
 export const ImageWrapper = styled.div<Partial<IStyles>>`
@@ -25,12 +30,34 @@ export const ImageWrapper = styled.div<Partial<IStyles>>`
   }
 
   &::before {
-content: url(${props => props.bg});
+    content: url(${(props) => props.bg});
 
     position: absolute;
 
     bottom: 0;
+  }
 
+  @media (min-width: 768px) {
+    margin-bottom: 64px;
+
+    & > img {
+      width: 445px;
+      height: 445px;
+    }
+
+    &::before {
+      transform: translateX(-100px);
+    }
+
+    &::after {
+      content: url(${(props) => props.secBg});
+      position: absolute;
+
+      top: 0;
+      right: 0;
+
+      transform: translateX(115%);
+    }
   }
 `;
 
@@ -42,6 +69,13 @@ export const Title = styled.h2`
   letter-spacing: -1.43px;
 
   color: #495567;
+
+  @media (min-width: 768px){
+    margin-bottom: 40px;
+
+    font-size: 48px;
+    letter-spacing: -2.14px;
+  }
 `;
 
 export const Body = styled.p`
@@ -51,4 +85,8 @@ export const Body = styled.p`
   line-height: 1.67;
 
   color: #939caa;
+
+  @media (min-width: 768px){
+    margin-bottom: 40px;
+  }
 `;

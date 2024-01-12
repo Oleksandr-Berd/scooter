@@ -3,7 +3,6 @@ import styled from "@emotion/styled";
 export const LinkStyled = styled.a`
 display: ${props => props.content === "Apply" && "block"};
 
-
 padding-top: 14px;
 padding-bottom: 14px;
 padding-left: ${props => props.content === "Learn More" || "Say Hello" ? "44px" : "39px"};
@@ -18,4 +17,10 @@ line-height: 1.67;
 
 background-color: #fcb72b;
 color: #fff;
+
+@media (min-width: 768px){
+padding-left: ${props => props.content === "Apply" && "68px"};
+padding-right: ${props => props.content === "Apply" && "67px"};
+
+}
 `

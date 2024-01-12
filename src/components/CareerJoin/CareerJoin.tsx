@@ -2,13 +2,14 @@ import * as SC from './CareerJoinStyles'
 
 import joinImg from "../../assets/images/join-us.jpg";
 import arrow from '../../assets/patterns/left-downward-arrow.svg'
+import circle from '../../assets/patterns/circle.svg'
 
 import ButtonLink from "../../ui/BtnLink/BtnLink";
 
 const CareerJoin: React.FC = () => {
   return (
     <SC.JoinSection>
-      <SC.ImageWrapper bg={arrow}>
+      <SC.ImageWrapper bg={arrow} secBg={circle}>
         <img src={joinImg} alt="join" />
       </SC.ImageWrapper>
       <SC.Title>Care to join our mission?</SC.Title>
