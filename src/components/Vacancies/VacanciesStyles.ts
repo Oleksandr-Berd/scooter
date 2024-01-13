@@ -5,6 +5,11 @@ padding-left: 32px;
 padding-right: 32px;
 
 margin-bottom: 120px;
+
+@media (min-width: 1440px){
+    padding-left: 165px;
+    padding-right: 165px;
+}
 `
 
 export const Item = styled.li`

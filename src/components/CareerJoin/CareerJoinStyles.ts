@@ -13,6 +13,15 @@ export const JoinSection = styled.section`
     padding-left: 97px;
     padding-right: 98px;
   }
+
+  @media (min-width: 1440px) {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+
+    padding-left: 165px;
+    padding-right: 165px;
+  }
 `;
 
 export const ImageWrapper = styled.div<Partial<IStyles>>`
@@ -59,7 +68,22 @@ export const ImageWrapper = styled.div<Partial<IStyles>>`
       transform: translateX(115%);
     }
   }
+
+  @media (min-width: 1440px){
+    &::before {
+      transform: translateX(-130px);
+      z-index: 1;
+    }
+  }
 `;
+
+export const ContentWrapper = styled.div`
+@media (min-width: 1440px){
+  text-align: left;
+
+  margin-right: 225px;
+}
+`
 
 export const Title = styled.h2`
   margin-bottom: 32px;
@@ -70,7 +94,7 @@ export const Title = styled.h2`
 
   color: #495567;
 
-  @media (min-width: 768px){
+  @media (min-width: 768px) {
     margin-bottom: 40px;
 
     font-size: 48px;
@@ -86,7 +110,7 @@ export const Body = styled.p`
 
   color: #939caa;
 
-  @media (min-width: 768px){
+  @media (min-width: 768px) {
     margin-bottom: 40px;
   }
 `;

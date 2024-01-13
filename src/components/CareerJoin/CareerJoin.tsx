@@ -12,6 +12,7 @@ const CareerJoin: React.FC = () => {
       <SC.ImageWrapper bg={arrow} secBg={circle}>
         <img src={joinImg} alt="join" />
       </SC.ImageWrapper>
+      <SC.ContentWrapper>
       <SC.Title>Care to join our mission?</SC.Title>
       <SC.Body>
         We’re always looking for ambitious individuals to help us on our
@@ -19,6 +20,7 @@ const CareerJoin: React.FC = () => {
         accessible transport to improve urban living we want to hear from you!
       </SC.Body>
       <ButtonLink content="Say Hello" path="#"/>
+      </SC.ContentWrapper>
     </SC.JoinSection>
   );
 };

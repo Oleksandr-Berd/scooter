@@ -119,7 +119,6 @@ export const Title = styled.h2`
 width: 307px;
 
     margin-bottom: 0;
-    /* margin-right: 75px; */
   }
 `;
 
