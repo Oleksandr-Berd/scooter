@@ -13,6 +13,11 @@ export const List = styled.ul`
     padding-left: 97px;
     padding-right: 98px;
   }
+
+  @media (min-width: 1440px) {
+    padding-left: 165px;
+    padding-right: 165px;
+  }
 `;
 
 export const Item = styled.li<Partial<IStyles>>`
@@ -48,7 +53,7 @@ export const Item = styled.li<Partial<IStyles>>`
     border-radius: 50%;
   }
 
-  & > h3 {
+  & h3 {
     margin-bottom: 32px;
 
     font-size: 32px;
@@ -58,7 +63,7 @@ export const Item = styled.li<Partial<IStyles>>`
     color: #495567;
   }
 
-  & > p {
+  & p {
     font-size: 15px;
     line-height: 1.67;
 
@@ -98,16 +103,54 @@ export const Item = styled.li<Partial<IStyles>>`
       transform: translateX(-100%);
     }
 
-    & > img {
+    & img {
       width: 445px;
       height: 445px;
     }
 
-    & > h3 {
+    & h3 {
       margin-bottom: 40px;
 
       font-size: 48px;
       letter-spacing: -2.14px;
+    }
+  }
+
+  @media (min-width: 1440px) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    & > div {
+      text-align: left;
+    }
+
+    &:first-of-type > div {
+      margin-right: 220px;
+    }
+
+    &:last-child > div {
+      margin-left: 220px;
+    }
+
+    &:first-of-type::before {
+      left: auto;
+      right: 0;
+
+      transform: translateY(268px) translateX(155px);
+    }
+
+    &:first-of-type::after{
+      transform: translateX(120%);
+    }
+
+    &:last-child::before {
+      transform: translateX(-58%);
+    }
+
+    &:last-child::after{
+      transform: translateX(-120%);
     }
   }
 `;

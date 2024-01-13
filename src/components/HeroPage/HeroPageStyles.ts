@@ -31,6 +31,10 @@ export const HeroPageStyled = styled.section<Partial<IStyles>>`
       transform: translateY(69px) translateX(31px);
     }
   }
+
+  @media (min-width: 1440px){
+    padding-left: 165px;
+  }
 `;
 
 export const Title = styled.h2`

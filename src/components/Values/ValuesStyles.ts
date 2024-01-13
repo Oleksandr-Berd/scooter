@@ -14,6 +14,12 @@ text-align: center;
 
     margin-bottom: 120px;
 }
+
+@media (min-width: 1440px){
+    padding-left: 165px;
+    padding-right: 165px;
+
+}
 `
 
 export const Title = styled.h2`
@@ -28,6 +34,14 @@ color: #495567;
     margin-bottom: 105px;
     font-size: 48px;
     letter-spacing: -2.14px;
+}
+`
+
+export const List = styled.ul`
+
+@media (min-width: 1440px){
+    display: flex;
+    flex-direction: row;
 }
 `
 
@@ -52,6 +66,13 @@ export const Item = styled.li`
     line-height: 1.67;
 
     color: #939caa;
+}
+
+@media (min-width: 1440px){
+    &:not(:last-child){
+        margin-bottom: 0;
+        margin-right: 30px;
+    }
 }
 `
 

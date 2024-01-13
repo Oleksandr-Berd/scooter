@@ -14,7 +14,7 @@ const Values: React.FC = () => {
   return (
     <SC.ValuesSection>
       <SC.Title>{title}</SC.Title>
-      <ul>
+      <SC.List>
         {values.map(({ id, name, body, img }) => {
           const count = id < 9 ? "0" + id : id;
 
@@ -31,7 +31,7 @@ const Values: React.FC = () => {
             </SC.Item>
           );
         })}
-      </ul>
+      </SC.List>
     </SC.ValuesSection>
   );
 };
