@@ -9,9 +9,14 @@ export const FAQsSection = styled.section`
 
   text-align: center;
 
-  @media (min-width: 768px){
+  @media (min-width: 768px) {
     padding-left: 39px;
     padding-right: 40px;
+  }
+
+  @media (min-width: 1440px) {
+    padding-left: 165px;
+    padding-right: 165px;
   }
 `;
 
@@ -23,12 +28,36 @@ export const Title = styled.h2`
 
   color: #495567;
 
-  @media (min-width: 768px){
+  @media (min-width: 768px) {
     margin-bottom: 64px;
 
     font-size: 48px;
     letter-spacing: -2.14px;
   }
+`;
+
+export const ListWrapper = styled.div`
+  @media (min-width: 1440px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &:first-of-type {
+    margin-bottom: 48px;
+
+    @media (min-width: 768px) {
+      margin-bottom: 32px;
+    }
+
+    @media (min-width: 1440px) {
+      margin-bottom: 64px;
+    }
+  }
+`;
+
+export const List = styled.ul`
+ 
 `;
 
 export const SubTitle = styled.h3`
@@ -39,7 +68,7 @@ export const SubTitle = styled.h3`
 
   color: #495567;
 
-  @media (min-width: 768px){
+  @media (min-width: 768px) {
     font-size: 40px;
     line-height: 1.2;
     letter-spacing: -1.79px;
@@ -52,8 +81,14 @@ export const Item = styled.li`
   &:not(:last-child) {
     margin-bottom: 16px;
 
-    @media (min-width: 768px){
-        margin-bottom: 24px;
+    @media (min-width: 768px) {
+      margin-bottom: 24px;
+    }
+
+    @media (min-width: 1440px) {
+      width: 730px;
+
+      margin-bottom: 16px;
     }
   }
 `;
@@ -71,7 +106,7 @@ export const QuestionWrapper = styled.div`
 
   text-align: left;
 
-  @media (min-width: 768px){
+  @media (min-width: 768px) {
     padding-left: 40px;
   }
 `;
@@ -82,7 +117,7 @@ export const Question = styled.h4`
 
   color: #495567;
 
-  @media (min-width: 768px){
+  @media (min-width: 768px) {
     font-size: 24px;
     line-height: 1.17;
     letter-spacing: -1.07px;

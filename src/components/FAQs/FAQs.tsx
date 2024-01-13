@@ -7,20 +7,26 @@ const FAQs: React.FC = () => {
   return (
     <SC.FAQsSection>
       <SC.Title>FAQs</SC.Title>
-      <ul>
-        <SC.SubTitle>How it works</SC.SubTitle>
+      <SC.ListWrapper>
+      <SC.SubTitle>How it works</SC.SubTitle>
+      <SC.List>
         {questions
           .filter(({ category }) => category === "How it works")
           .map(({ id, question, answer }) => (
             <FAQsItem key={id} question={question} answer={answer} />
           ))}
-        <SC.SubTitle style={{marginTop:"32px"}}>Safe driving</SC.SubTitle>
+      </SC.List>
+      </SC.ListWrapper>
+      <SC.ListWrapper>
+      <SC.SubTitle >Safe driving</SC.SubTitle>
+      <SC.List>
         {questions
           .filter(({ category }) => category === "Safe driving")
           .map(({ id, question, answer }) => (
             <FAQsItem key={id} question={question} answer={answer} />
           ))}
-      </ul>
+      </SC.List>
+      </SC.ListWrapper>
     </SC.FAQsSection>
   );
 };

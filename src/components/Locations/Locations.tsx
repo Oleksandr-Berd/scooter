@@ -2,6 +2,7 @@ import * as SC from "./LocationsStyles";
 
 import mapMob from "../../assets/images/world-map-mobile.png";
 import mapTab from '../../assets/images/world-map-tablet.png'
+import mapDesk from '../../assets/images/world-map-desktop.png'
 import { locations } from "../../db/db";
 import ButtonLink from "../../ui/BtnLink/BtnLink";
 import { useMediaQuery } from "usehooks-ts";
@@ -9,14 +10,16 @@ import { useMediaQuery } from "usehooks-ts";
 const Locations: React.FC = () => {
 
 const isTablet = useMediaQuery("(min-width:768px)")
+const isDesktop = useMediaQuery("(min-width:1440px)")
 
   return (
     <SC.LocationsSection>
         <SC.MapWrapper>
-      <img src={isTablet ? mapTab : mapMob} alt="map" />
+      <img src={isDesktop ? mapDesk : isTablet ? mapTab : mapMob} alt="map" />
       <SC.List>
         {locations.map(({ id, city }) => (
-          <SC.Item city={city} key={id}>{city}
+          <SC.Item city={city} key={id}><span> {city}</span>
+         
           {isTablet ? <SC.Triangle></SC.Triangle> : null}
           </SC.Item>
         ))}

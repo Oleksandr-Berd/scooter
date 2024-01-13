@@ -71,11 +71,33 @@ export const Item = styled.li<IMap>`
 
     background-color: #fcb72b;
   }
+
+  @media (min-width: 1440px){
+    width: 189px;
+
+    transform: ${props => props.city === "New York" ? "translateY(50px) translateX(145px)" : props.city === "London" ? "translateY(-5px) translateX(395px)": props.city === "Yokohama" ? "translateY(55px) translateX(850px)" : "translateY(200px) translateX(750px)"};
+
+    padding-top: 22px;
+    padding-bottom: 22px;
+
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: -1.07px;
+  }
 `;
 
 export const ContentWrapper = styled.div`
 padding-left: calc(97px - 32px);
 padding-right: calc(98px - 32px);
+
+@media (min-width: 1440px){
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  text-align: left;
+}
 `
 
 export const Title = styled.h2`
@@ -92,6 +114,13 @@ export const Title = styled.h2`
     font-size: 48px;
     letter-spacing: -2.14px;
   }
+
+  @media (min-width: 1440px){
+width: 307px;
+
+    margin-bottom: 0;
+    /* margin-right: 75px; */
+  }
 `;
 
 export const Body = styled.p`
@@ -105,6 +134,13 @@ export const Body = styled.p`
   @media (min-width: 768px){
     margin-bottom: 40px;
   }
+
+  @media (min-width: 1440px){
+width: 445px;
+
+    margin-bottom: 0;
+    margin-right: 105px;
+  }
 `;
 
 export const Triangle = styled.div`
@@ -114,9 +150,9 @@ export const Triangle = styled.div`
   bottom: 0;
   left: 0;
 
-  transform: translateY(10px) translateX(50px);
+  transform: translateY(40px) translateX(80px);
 
-  border-left: 10px solid transparent;
-  border-right: 10px solid transparent;
-  border-top: 10px solid #fcb72b;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid #fcb72b;
 `;
