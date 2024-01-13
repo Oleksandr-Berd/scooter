@@ -7,8 +7,10 @@ import SocNet from "../../ui/SocNet/SocNet";
 const Footer: React.FC = () => {
   return (
     <SC.FooterStyled>
+      <div>
       <Logo location="footer" />
       <NavBar location="footer"/>
+      </div>
       <SocNet/>
     </SC.FooterStyled>
   );
