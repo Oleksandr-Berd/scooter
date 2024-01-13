@@ -14,9 +14,18 @@ export const ManualSection = styled.section<Partial<IStyles>>`
       position: absolute;
       top: 0;
       left: 0;
-z-index: -1;
+      z-index: -1;
       transform: translateX(138px) translateY(-24%);
     }
+  }
+
+  @media (min-width: 1440px){
+    margin-bottom: 200px;
+
+&::before{
+  transform: translateX(0px) translateY(43px);
+
+}
   }
 `;
 
@@ -27,6 +36,14 @@ export const ManualList = styled.ul`
   @media (min-width: 768px) {
     padding-left: 97px;
     padding-right: 98px;
+  }
+
+  @media (min-width: 1440px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+    padding-left: 165px;
   }
 `;
 
@@ -46,6 +63,17 @@ export const Item = styled.li`
       text-align: left;
     }
   }
+
+  @media (min-width: 1440px) {
+    width: 350px;
+
+    flex-direction: column;
+
+    &:not(:last-child) {
+      margin-bottom: 0;
+      margin-right: 30px;
+    }
+  }
 `;
 
 export const Icon = styled.img`
@@ -60,6 +88,11 @@ export const Icon = styled.img`
 
     margin-bottom: 0;
     margin-right: 79px;
+  }
+
+  @media (min-width: 1440px) {
+    margin-bottom: 40px;
+    margin-right: 0;
   }
 `;
 

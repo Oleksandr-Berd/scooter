@@ -2,6 +2,7 @@ import { lazy } from 'react';
 
 import { Route, Routes } from 'react-router-dom';
 import SharedLayout from './layouts/SharedLayout/SharedLayout';
+import NotFound from './pages/NotFound/NotFound';
 
 const HomePage = lazy(()=>import("./pages/HomePage/HomePage"))
 const AboutPage = lazy(()=> import("./pages/AboutPage/AboutPage"))
@@ -17,6 +18,7 @@ function App() {
           <Route path='/about' element={<AboutPage/>}/>
           <Route path='/careers' element={<CareersPage/>}/>
           <Route path='/location' element={<LocationPage/>}/>
+          <Route path='*' element={<NotFound/>}/>
         </Routes>
       </SharedLayout>
     </>
