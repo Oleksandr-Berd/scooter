@@ -15,6 +15,13 @@ export const HomeNavList = styled.ul`
 
     margin-bottom: 104px;
   }
+
+  @media (min-width: 1440px) {
+    padding-left: 165px;
+    padding-right: 165px;
+
+    margin-bottom: 200px;
+  }
 `;
 
 export const HomeNavItem = styled.li<Partial<IStyles>>`
@@ -45,39 +52,81 @@ export const HomeNavItem = styled.li<Partial<IStyles>>`
     transform: translateX(13%);
   }
 
-  @media (min-width: 768px){
-    &:not(:last-child){
+  @media (min-width: 768px) {
+    &:not(:last-child) {
       margin-bottom: 128px;
     }
 
     &:nth-child(1)::before {
+      transform: translateY(307px) translateX(-60px);
+    }
 
-    transform: translateY(307px) translateX(-60px);
+    &:nth-child(odd)::after {
+      content: url(${(props) => props.secBg});
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: -1;
+
+      transform: translateX(calc(350px + 104px));
+    }
+
+    &:nth-child(even)::after {
+      content: url(${(props) => props.secBg});
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+
+      transform: translateX(calc(-350px - 104px));
+    }
+
+    &:nth-child(3)::before {
+      transform: translateX(295px) translateY(85px);
+    }
   }
 
-  &:nth-child(1)::after, &:nth-child(3)::after{
-    content: url(${props => props.secBg});
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: -1;
+  @media (min-width: 1440px) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 
-    transform: translateX(calc(350px + 104px));
-  }
+    & > div {
+      text-align: left;
+    }
 
-  &:nth-child(2)::after{
-    content: url(${props => props.secBg});
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
+    &:nth-child(odd)::after {
+      transform: translateX(calc(350px + 164px));
+    }
 
-    transform: translateX(calc(-350px - 104px));
+    &:nth-child(even)::after {
+      transform: translateX(calc(-350px - 164px));
+    }
+
+    &:nth-child(odd) > div {
+      margin-right: 220px;
+    }
+
+    &:nth-child(even) > div {
+      margin-left: 220px;
+    }
+
+    &:nth-child(1)::before{
+      left: auto;
+      right: 0;
+      transform: translateY(307px) translateX(160px);
+    }
+
+    &:nth-child(2)::before {
+    transform: translateX(-65%);
   }
 
   &:nth-child(3)::before {
-    transform: translateX(295px) translateY(85px);
-  }
+    right: 0;
+    left: auto;
+      transform: translateX(500px) translateY(85px);
+    }
   }
 `;
 

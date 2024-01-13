@@ -23,4 +23,13 @@ padding-left: ${props => props.content === "Apply" && "68px"};
 padding-right: ${props => props.content === "Apply" && "67px"};
 
 }
+transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+&:hover, &:focus{
+    background-color: #fff;
+    color: #fcb72b;
+    border: 1px solid #fcb72b;
+
+    transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
 `
